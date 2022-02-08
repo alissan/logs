@@ -1,0 +1,297 @@
+{
+  "_nodes" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "cluster_name" : "testcluster",
+  "cluster_uuid" : "Q4dT728bQ425VIKxzebzNw",
+  "timestamp" : 1644301834952,
+  "status" : "green",
+  "indices" : {
+    "count" : 5019,
+    "shards" : {
+      "total" : 5044,
+      "primaries" : 5019,
+      "replication" : 0.004981071926678621,
+      "index" : {
+        "shards" : {
+          "min" : 1,
+          "max" : 2,
+          "avg" : 1.0049810719266785
+        },
+        "primaries" : {
+          "min" : 1,
+          "max" : 1,
+          "avg" : 1.0
+        },
+        "replication" : {
+          "min" : 0.0,
+          "max" : 1.0,
+          "avg" : 0.004981071926678621
+        }
+      }
+    },
+    "docs" : {
+      "count" : 45816869992,
+      "deleted" : 5920685
+    },
+    "store" : {
+      "size_in_bytes" : 15606023941781,
+      "total_data_set_size_in_bytes" : 15606023941781,
+      "reserved_in_bytes" : 0
+    },
+    "fielddata" : {
+      "memory_size_in_bytes" : 1378562400,
+      "evictions" : 0
+    },
+    "query_cache" : {
+      "memory_size_in_bytes" : 12833101416,
+      "total_count" : 335338661,
+      "hit_count" : 29036894,
+      "miss_count" : 306301767,
+      "cache_size" : 225661,
+      "cache_count" : 560279,
+      "evictions" : 334618
+    },
+    "completion" : {
+      "size_in_bytes" : 0
+    },
+    "segments" : {
+      "count" : 94219,
+      "memory_in_bytes" : 2191007460,
+      "terms_memory_in_bytes" : 1799871192,
+      "stored_fields_memory_in_bytes" : 74337336,
+      "term_vectors_memory_in_bytes" : 0,
+      "norms_memory_in_bytes" : 250261120,
+      "points_memory_in_bytes" : 0,
+      "doc_values_memory_in_bytes" : 66537812,
+      "index_writer_memory_in_bytes" : 255016338,
+      "version_map_memory_in_bytes" : 24268617,
+      "fixed_bit_set_memory_in_bytes" : 63225848,
+      "max_unsafe_auto_id_timestamp" : 1644296587778,
+      "file_sizes" : { }
+    },
+    "mappings" : {
+      "field_types" : [
+        {
+          "name" : "boolean",
+          "count" : 44,
+          "index_count" : 16,
+          "script_count" : 0
+        },
+        {
+          "name" : "constant_keyword",
+          "count" : 9,
+          "index_count" : 3,
+          "script_count" : 0
+        },
+        {
+          "name" : "date",
+          "count" : 10069,
+          "index_count" : 5015,
+          "script_count" : 0
+        },
+        {
+          "name" : "float",
+          "count" : 74,
+          "index_count" : 9,
+          "script_count" : 0
+        },
+        {
+          "name" : "half_float",
+          "count" : 56,
+          "index_count" : 14,
+          "script_count" : 0
+        },
+        {
+          "name" : "integer",
+          "count" : 5030,
+          "index_count" : 4883,
+          "script_count" : 0
+        },
+        {
+          "name" : "ip",
+          "count" : 3,
+          "index_count" : 3,
+          "script_count" : 0
+        },
+        {
+          "name" : "keyword",
+          "count" : 461993,
+          "index_count" : 5015,
+          "script_count" : 0
+        },
+        {
+          "name" : "long",
+          "count" : 6287,
+          "index_count" : 4971,
+          "script_count" : 0
+        },
+        {
+          "name" : "nested",
+          "count" : 23,
+          "index_count" : 9,
+          "script_count" : 0
+        },
+        {
+          "name" : "object",
+          "count" : 837,
+          "index_count" : 21,
+          "script_count" : 0
+        },
+        {
+          "name" : "text",
+          "count" : 461487,
+          "index_count" : 5008,
+          "script_count" : 0
+        },
+        {
+          "name" : "version",
+          "count" : 2,
+          "index_count" : 2,
+          "script_count" : 0
+        }
+      ],
+      "runtime_field_types" : [ ]
+    },
+    "analysis" : {
+      "char_filter_types" : [ ],
+      "tokenizer_types" : [ ],
+      "filter_types" : [ ],
+      "analyzer_types" : [ ],
+      "built_in_char_filters" : [ ],
+      "built_in_tokenizers" : [ ],
+      "built_in_filters" : [ ],
+      "built_in_analyzers" : [ ]
+    },
+    "versions" : [
+      {
+        "version" : "7.16.2",
+        "index_count" : 5019,
+        "primary_shard_count" : 5019,
+        "total_primary_bytes" : 15468810183336
+      }
+    ]
+  },
+  "nodes" : {
+    "count" : {
+      "total" : 5,
+      "coordinating_only" : 0,
+      "data" : 5,
+      "data_cold" : 5,
+      "data_content" : 5,
+      "data_frozen" : 5,
+      "data_hot" : 5,
+      "data_warm" : 5,
+      "ingest" : 5,
+      "master" : 1,
+      "ml" : 0,
+      "remote_cluster_client" : 5,
+      "transform" : 5,
+      "voting_only" : 0
+    },
+    "versions" : [
+      "7.16.2"
+    ],
+    "os" : {
+      "available_processors" : 44,
+      "allocated_processors" : 44,
+      "names" : [
+        {
+          "name" : "Linux",
+          "count" : 5
+        }
+      ],
+      "pretty_names" : [
+        {
+          "pretty_name" : "CentOS Linux 7 (Core)",
+          "count" : 5
+        }
+      ],
+      "architectures" : [
+        {
+          "arch" : "amd64",
+          "count" : 5
+        }
+      ],
+      "mem" : {
+        "total_in_bytes" : 371619082240,
+        "free_in_bytes" : 2012643328,
+        "used_in_bytes" : 369606438912,
+        "free_percent" : 1,
+        "used_percent" : 99
+      }
+    },
+    "process" : {
+      "cpu" : {
+        "percent" : 112
+      },
+      "open_file_descriptors" : {
+        "min" : 14178,
+        "max" : 14703,
+        "avg" : 14494
+      }
+    },
+    "jvm" : {
+      "max_uptime_in_millis" : 2478529230,
+      "versions" : [
+        {
+          "version" : "17.0.1",
+          "vm_name" : "OpenJDK 64-Bit Server VM",
+          "vm_version" : "17.0.1+12",
+          "vm_vendor" : "Eclipse Adoptium",
+          "bundled_jdk" : true,
+          "using_bundled_jdk" : true,
+          "count" : 5
+        }
+      ],
+      "mem" : {
+        "heap_used_in_bytes" : 73767205888,
+        "heap_max_in_bytes" : 161061273600
+      },
+      "threads" : 969
+    },
+    "fs" : {
+      "total_in_bytes" : 19232037294080,
+      "free_in_bytes" : 3600839938048,
+      "available_in_bytes" : 3600839938048
+    },
+    "plugins" : [ ],
+    "network_types" : {
+      "transport_types" : {
+        "netty4" : 5
+      },
+      "http_types" : {
+        "netty4" : 5
+      }
+    },
+    "discovery_types" : {
+      "zen" : 5
+    },
+    "packaging_types" : [
+      {
+        "flavor" : "default",
+        "type" : "rpm",
+        "count" : 5
+      }
+    ],
+    "ingest" : {
+      "number_of_pipelines" : 2,
+      "processor_stats" : {
+        "gsub" : {
+          "count" : 0,
+          "failed" : 0,
+          "current" : 0,
+          "time_in_millis" : 0
+        },
+        "script" : {
+          "count" : 0,
+          "failed" : 0,
+          "current" : 0,
+          "time_in_millis" : 0
+        }
+      }
+    }
+  }
+}
