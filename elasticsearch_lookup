@@ -1,0 +1,90 @@
+DELETE blacklist_ip_lookup
+DELETE traffic_logs
+
+//--------------------------------------------------------------
+
+POST /blacklist_ip_lookup/_doc/1
+{ 
+  "ip_list" : [ 
+{  "ip":"99.86.38.68","desc":"known attacker", "location":"USA" }, 
+{  "ip":"99.9.12.173", "desc":"SSSH Dictionary Attack", "location":"India" },
+{  "ip":"99.90.54.53", "desc":"stamparm ipsum", "location":"Indonesia" }]
+}
+
+//--------------------------------------------------------------
+
+PUT /traffic_logs/_doc/1
+{ "src_ip":"10.10.1.5", "dst_ip":"99.86.38.68", "action":"allow" }
+
+PUT /traffic_logs/_doc/2
+{ "src_ip":"10.10.1.6", "dst_ip":"99.9.12.173", "action":"allow" }
+
+PUT /traffic_logs/_doc/3
+{ "src_ip":"10.10.1.7", "dst_ip":"8.8.8.8", "action":"allow" }
+
+//--------------------------------------------------------------
+
+
+GET /traffic_logs/_search?pretty
+{
+   "query" : {
+ "bool" : {
+   "must" : {
+     "terms" : {
+       "dst_ip" : {
+         "index" : "blacklist_ip_lookup",
+         
+         "id" : "1",
+         "path" : "ip_list.ip" 
+       }
+       //"_cache_key" : "currencyexchange" 
+
+   }
+ }
+   }
+ }}
+ 
+ 
+ 
+ //--------------------------------------------------------------
+ 
+ 
+ {
+  "took": 872,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 2,
+      "relation": "eq"
+    },
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "traffic_logs",
+        "_id": "1",
+        "_score": 1,
+        "_source": {
+          "src_ip": "10.10.1.5",
+          "dst_ip": "99.86.38.68",
+          "action": "allow"
+        }
+      },
+      {
+        "_index": "traffic_logs",
+        "_id": "2",
+        "_score": 1,
+        "_source": {
+          "src_ip": "10.10.1.6",
+          "dst_ip": "99.9.12.173",
+          "action": "allow"
+        }
+      }
+    ]
+  }
+}
