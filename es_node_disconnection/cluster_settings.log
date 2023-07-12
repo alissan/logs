@@ -1,0 +1,56 @@
+{
+  "persistent": {
+    "cluster": {
+      "routing": {
+        "rebalance": {
+          "enable": "none"
+        },
+        "allocation": {
+          "allow_rebalance": "always",
+          "cluster_concurrent_rebalance": "12",
+          "disk": {
+            "threshold_enabled": "true",
+            "watermark": {
+              "low": "95%",
+              "flood_stage": "98%",
+              "high": "95%"
+            }
+          },
+          "balance": {
+            "write_load": "12.0f",
+            "disk_usage": "2e-11f",
+            "shard": "0.65f"
+          },
+          "same_shard": {
+            "host": "false"
+          },
+          "total_shards_per_node": "10000"
+        }
+      },
+      "max_shards_per_node": "10000"
+    },
+    "xpack": {
+      "monitoring": {
+        "collection": {
+          "enabled": "true"
+        }
+      }
+    },
+    "logger": {
+      "elasticsearch": {
+        "cluster": "TRACE"
+      },
+      "_root": "ERROR",
+      "org": {
+        "elasticsearch.discovery": "DEBUG",
+        "elasticsearch.transport": "WARN",
+        "elasticsearch.index": "WARN",
+        "elasticsearch": "ERROR",
+        "elasticsearch.cluster": "TRACE",
+        "elasticsearch.http": "WARN",
+        "elasticsearch.action": "WARN"
+      }
+    }
+  },
+  "transient": {}
+}

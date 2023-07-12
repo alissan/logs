@@ -1,0 +1,17 @@
+{
+  "name": "m1",
+  "cluster_name": "c10",
+  "cluster_uuid": "abc",
+  "version": {
+    "number": "8.6.2",
+    "build_flavor": "default",
+    "build_type": "rpm",
+    "build_hash": "2d58d0f136141f03239816a4e360a8d17b6d8f29",
+    "build_date": "2023-02-13T09:35:20.314882762Z",
+    "build_snapshot": false,
+    "lucene_version": "9.4.2",
+    "minimum_wire_compatibility_version": "7.17.0",
+    "minimum_index_compatibility_version": "7.0.0"
+  },
+  "tagline": "You Know, for Search"
+}

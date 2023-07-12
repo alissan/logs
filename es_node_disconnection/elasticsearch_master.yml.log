@@ -1,0 +1,20 @@
+cluster.name: c10
+node.name: m01
+node.roles: ["master","remote_cluster_client"]
+network.host: ["192.168.1.231", "127.0.0.1"]
+discovery.seed_hosts: ["192.168.1.231","192.168.1.232","192.168.1.233","192.168.1.242","192.168.1.243","192.168.1.244","192.168.1.245","192.168.1.246","192.168.1.247","192.168.1.248","192.168.1.249","192.168.1.250","192.168.1.251","192.168.2.231","192.168.2.232","192.168.2.233","192.168.2.234","192.168.2.235","192.168.2.236","192.168.2.237","192.168.2.238","192.168.2.239","192.168.2.240","192.168.2.241","192.168.2.242","192.168.2.243","192.168.2.244","192.168.2.245","192.168.2.246","192.168.2.247","192.168.2.248","192.168.2.249","192.168.2.250","192.168.2.251","192.168.2.252","192.168.2.253","192.168.2.254","192.168.3.199","192.168.3.200","192.168.3.201","192.168.3.202","192.168.3.203","192.168.3.204","192.168.3.205","192.168.3.206","192.168.3.207","192.168.3.208","192.168.3.209"]
+path.data: /data/elasticsearch
+path.logs: /var/log/elasticsearch
+transport.port: 9300
+http.port: 9200
+indices.memory.index_buffer_size: 25%
+http.max_content_length: 2147483647b
+search.max_buckets: 1000000
+xpack.ml.enabled: false
+xpack.security.enabled: false
+xpack.watcher.enabled: false
+xpack.security.transport.ssl.enabled: false
+xpack.security.http.ssl.enabled: false
+ingest.geoip.downloader.enabled: false
+#bootstrap.memory_lock: true
+http.compression: true

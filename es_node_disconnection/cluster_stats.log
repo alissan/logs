@@ -1,0 +1,349 @@
+{
+  "_nodes": {
+    "total": 43,
+    "successful": 43,
+    "failed": 0
+  },
+  "cluster_name": "c10",
+  "cluster_uuid": "abc",
+  "timestamp": 1689079427525,
+  "status": "green",
+  "indices": {
+    "count": 1639,
+    "shards": {
+      "total": 3334,
+      "primaries": 2987,
+      "replication": 0.1161700703046535,
+      "index": {
+        "shards": {
+          "min": 1,
+          "max": 24,
+          "avg": 2.0341671751067723
+        },
+        "primaries": {
+          "min": 1,
+          "max": 12,
+          "avg": 1.8224527150701648
+        },
+        "replication": {
+          "min": 0,
+          "max": 1,
+          "avg": 0.09273947528981086
+        }
+      }
+    },
+    "docs": {
+      "count": 158009179413,
+      "deleted": 6099536
+    },
+    "store": {
+      "size_in_bytes": 119969274506653,
+      "total_data_set_size_in_bytes": 119969274506653,
+      "reserved_in_bytes": 0
+    },
+    "fielddata": {
+      "memory_size_in_bytes": 148544,
+      "evictions": 0
+    },
+    "query_cache": {
+      "memory_size_in_bytes": 5971790353,
+      "total_count": 189427138,
+      "hit_count": 7970176,
+      "miss_count": 181456962,
+      "cache_size": 20987,
+      "cache_count": 54635,
+      "evictions": 33648
+    },
+    "completion": {
+      "size_in_bytes": 0
+    },
+    "segments": {
+      "count": 100683,
+      "memory_in_bytes": 0,
+      "terms_memory_in_bytes": 0,
+      "stored_fields_memory_in_bytes": 0,
+      "term_vectors_memory_in_bytes": 0,
+      "norms_memory_in_bytes": 0,
+      "points_memory_in_bytes": 0,
+      "doc_values_memory_in_bytes": 0,
+      "index_writer_memory_in_bytes": 3199550812,
+      "version_map_memory_in_bytes": 304,
+      "fixed_bit_set_memory_in_bytes": 21950944,
+      "max_unsafe_auto_id_timestamp": 1689078448248,
+      "file_sizes": {}
+    },
+    "mappings": {
+      "total_field_count": 332896,
+      "total_deduplicated_field_count": 56700,
+      "total_deduplicated_mapping_size_in_bytes": 225631,
+      "field_types": [
+        {
+          "name": "boolean",
+          "count": 48,
+          "index_count": 20,
+          "script_count": 0
+        },
+        {
+          "name": "constant_keyword",
+          "count": 6,
+          "index_count": 2,
+          "script_count": 0
+        },
+        {
+          "name": "date",
+          "count": 3307,
+          "index_count": 1630,
+          "script_count": 0
+        },
+        {
+          "name": "float",
+          "count": 76,
+          "index_count": 10,
+          "script_count": 0
+        },
+        {
+          "name": "half_float",
+          "count": 56,
+          "index_count": 14,
+          "script_count": 0
+        },
+        {
+          "name": "integer",
+          "count": 1282,
+          "index_count": 1135,
+          "script_count": 0
+        },
+        {
+          "name": "ip",
+          "count": 2,
+          "index_count": 2,
+          "script_count": 0
+        },
+        {
+          "name": "keyword",
+          "count": 161908,
+          "index_count": 1633,
+          "script_count": 0
+        },
+        {
+          "name": "long",
+          "count": 3586,
+          "index_count": 1631,
+          "script_count": 0
+        },
+        {
+          "name": "nested",
+          "count": 24,
+          "index_count": 10,
+          "script_count": 0
+        },
+        {
+          "name": "object",
+          "count": 1263,
+          "index_count": 206,
+          "script_count": 0
+        },
+        {
+          "name": "text",
+          "count": 161335,
+          "index_count": 1626,
+          "script_count": 0
+        },
+        {
+          "name": "version",
+          "count": 3,
+          "index_count": 3,
+          "script_count": 0
+        }
+      ],
+      "runtime_field_types": []
+    },
+    "analysis": {
+      "char_filter_types": [],
+      "tokenizer_types": [],
+      "filter_types": [],
+      "analyzer_types": [],
+      "built_in_char_filters": [],
+      "built_in_tokenizers": [],
+      "built_in_filters": [],
+      "built_in_analyzers": []
+    },
+    "versions": [
+      {
+        "version": "8.6.2",
+        "index_count": 1639,
+        "primary_shard_count": 2987,
+        "total_primary_bytes": 105819013636913
+      }
+    ],
+    "search": {
+      "total": 4338341,
+      "queries": {
+        "bool": 4147526,
+        "prefix": 54,
+        "match": 32732,
+        "range": 3117354,
+        "nested": 52,
+        "wildcard": 26,
+        "match_phrase": 891,
+        "terms": 556594,
+        "match_phrase_prefix": 2,
+        "exists": 683220,
+        "match_all": 35,
+        "term": 3199695,
+        "simple_query_string": 75821,
+        "query_string": 751
+      },
+      "sections": {
+        "runtime_mappings": 52,
+        "query": 4155346,
+        "script_fields": 9,
+        "terminate_after": 272,
+        "_source": 362695,
+        "pit": 5814,
+        "collapse": 341828,
+        "aggs": 1654267
+      }
+    }
+  },
+  "nodes": {
+    "count": {
+      "total": 43,
+      "coordinating_only": 0,
+      "data": 40,
+      "data_cold": 0,
+      "data_content": 0,
+      "data_frozen": 0,
+      "data_hot": 0,
+      "data_warm": 0,
+      "index": 0,
+      "ingest": 0,
+      "master": 8,
+      "ml": 0,
+      "remote_cluster_client": 3,
+      "search": 0,
+      "transform": 0,
+      "voting_only": 5
+    },
+    "versions": [
+      "8.6.2"
+    ],
+    "os": {
+      "available_processors": 784,
+      "allocated_processors": 784,
+      "names": [
+        {
+          "name": "Linux",
+          "count": 43
+        }
+      ],
+      "pretty_names": [
+        {
+          "pretty_name": "OpenShift Enterprise",
+          "count": 2
+        },
+        {
+          "pretty_name": "Red Hat Enterprise Linux 8.6 (Ootpa)",
+          "count": 40
+        },
+        {
+          "pretty_name": "Red Hat Enterprise Linux Server 7.9 (Maipo)",
+          "count": 1
+        }
+      ],
+      "architectures": [
+        {
+          "arch": "amd64",
+          "count": 43
+        }
+      ],
+      "mem": {
+        "total_in_bytes": 3093377634304,
+        "adjusted_total_in_bytes": 3093377634304,
+        "free_in_bytes": 282788540416,
+        "used_in_bytes": 2810589093888,
+        "free_percent": 9,
+        "used_percent": 91
+      }
+    },
+    "process": {
+      "cpu": {
+        "percent": 109
+      },
+      "open_file_descriptors": {
+        "min": 1530,
+        "max": 3902,
+        "avg": 3509
+      }
+    },
+    "jvm": {
+      "max_uptime_in_millis": 5936321079,
+      "versions": [
+        {
+          "version": "19.0.2",
+          "vm_name": "OpenJDK 64-Bit Server VM",
+          "vm_version": "19.0.2+7-44",
+          "vm_vendor": "Oracle Corporation",
+          "bundled_jdk": true,
+          "using_bundled_jdk": true,
+          "count": 43
+        }
+      ],
+      "mem": {
+        "heap_used_in_bytes": 619409101496,
+        "heap_max_in_bytes": 1373315792896
+      },
+      "threads": 6414
+    },
+    "fs": {
+      "total_in_bytes": 881323037687808,
+      "free_in_bytes": 687304113307648,
+      "available_in_bytes": 687304113307648
+    },
+    "plugins": [],
+    "network_types": {
+      "transport_types": {
+        "netty4": 43
+      },
+      "http_types": {
+        "netty4": 43
+      }
+    },
+    "discovery_types": {
+      "multi-node": 43
+    },
+    "packaging_types": [
+      {
+        "flavor": "default",
+        "type": "rpm",
+        "count": 43
+      }
+    ],
+    "ingest": {
+      "number_of_pipelines": 0,
+      "processor_stats": {}
+    },
+    "indexing_pressure": {
+      "memory": {
+        "current": {
+          "combined_coordinating_and_primary_in_bytes": 0,
+          "coordinating_in_bytes": 0,
+          "primary_in_bytes": 0,
+          "replica_in_bytes": 0,
+          "all_in_bytes": 0
+        },
+        "total": {
+          "combined_coordinating_and_primary_in_bytes": 0,
+          "coordinating_in_bytes": 0,
+          "primary_in_bytes": 0,
+          "replica_in_bytes": 0,
+          "all_in_bytes": 0,
+          "coordinating_rejections": 0,
+          "primary_rejections": 0,
+          "replica_rejections": 0
+        },
+        "limit_in_bytes": 0
+      }
+    }
+  }
+}
