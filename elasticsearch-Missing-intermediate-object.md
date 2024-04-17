@@ -244,6 +244,7 @@ GET test_2/_mapping
             "match": "*",
             "match_mapping_type": "string",
             "mapping": {
+              "normalizer": "lowercase",
               "type": "keyword"
             }
           }
