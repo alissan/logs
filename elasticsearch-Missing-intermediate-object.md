@@ -1,4 +1,28 @@
+## elasticsearch version:
 
+```
+GET /
+```
+
+```
+{
+  "name": "c1",
+  "cluster_name": "cluster1",
+  "cluster_uuid": "abc",
+  "version": {
+    "number": "8.8.2",
+    "build_flavor": "default",
+    "build_type": "rpm",
+    "build_hash": "98e1271edf932a480e4262a471281f1ee295ce6b",
+    "build_date": "2023-06-26T05:16:16.196344851Z",
+    "build_snapshot": false,
+    "lucene_version": "9.6.0",
+    "minimum_wire_compatibility_version": "7.17.0",
+    "minimum_index_compatibility_version": "7.0.0"
+  },
+  "tagline": "You Know, for Search"
+}
+```
 
 ## create index with old mapping
 
