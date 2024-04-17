@@ -157,17 +157,18 @@ PUT /test_2
       "enabled": true
     },
     "dynamic": "runtime",
-    "dynamic_templates": [
-      {
-        "lowercase_dynamic_fields": {
-          "mapping": {
-            "type": "keyword"
-          },
-          "match_mapping_type": "string",
-          "match": "*"
+    "dynamic_templates" : [
+        {
+          "lowercase_dynamic_fields" : {
+            "match" : "*",
+            "match_mapping_type" : "string",
+            "mapping" : {
+              "normalizer" : "lowercase",
+              "type" : "keyword"
+            }
+          }
         }
-      }
-    ],
+      ],
     "date_detection": false,
     "properties": {
       "ts": {
